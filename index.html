@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./assets/galleryItems.js"></script>
+    <script src="script.js"></script>
+    <link href="https://api.fontshare.com/v2/css?f%5B%5D=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&f%5B%5D=bebas-neue@400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>🎨 Le Paintings Boutique</title>
+</head>
+<body>
+    <header id="header">
+        <div class="page-name">Le Paintings Boutique</div>
+        <nav class="top-nav">
+            <div id="drop-down-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+            <ul class="page-nav" id="navigation">
+                <li class="nav-item">
+                    <a href="#title_screen">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#lore">Lore</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="app">
+        <section id="title_screen" class="title-screen">
+            <h1>
+                Le Paintings Boutique
+            </h1>
+        </section>
+        <section id="lore">
+            <article class="lore-article">
+                <h2 class="lore-article-heading">Paintings origins</h2>
+                <div class="lore-text">
+                    <p>
+                        The <b>paintings</b> channel was created as a means to showcase the many different
+                        MS paint creations that were made during the lockdown period, where schools
+                        adopted the remote-learning model.
+                    </p>
+                    <p>
+                        During remote-learning, the discord server "<b>Tālmācības</b>" was made. The server
+                        was used as a way for the class of <i>10.b</i> to "<i>help</i>" each other with studying,
+                        tests and other school related acitivities.
+                    </p>
+                    <p>
+                        Meanwhile, while bored and in-between classes, two classmates(who will be referred to with
+                        their discord usernames): <b>Piens</b> and <b>Lars</b>, came up with an activity. Instead of wasting this
+                        time doing nothing, they could draw.<br>
+                        Due to the quantity of said drawings and a desire to show them off, a seperate channel was made within the
+                        Tālmācības discord server - <b>paintings</b>.
+                    </p>
+                </div>
+            </article>
+            <article id="collaborators" class="lore-article">
+                <h2 class="lore-article-heading">Collaborators</h2>
+                <ul class="collaborator-list">
+                    <li class="collaborator lore-text">
+                        <div class="image-wrapper">
+                            <img src="assets/lars.png" alt="lars icon">
+                        </div>
+                        <div class="collaborator-text">
+                            <h3>Lars</h3>
+                            <p>Tālmācības owner</p>
+                            <p class="extended-description"></p>
+                        </div>
+                    </li>
+                    <li class="collaborator lore-text left-side">
+                        <div class="image-wrapper">
+                            <img src="assets/piens.png" alt="piens icon">
+                        </div>
+                        <div class="collaborator-text">
+                            <h3>piens</h3>
+                            <p>He made things</p>
+                            <p class="extended-description"></p>
+                        </div>
+                    </li>
+                    <li class="collaborator lore-text">
+                        <div class="image-wrapper">
+                            <img src="assets/stereo.jpg" alt="stereo icon">
+                        </div>
+                        <div class="collaborator-text">
+                            <h3>stereotypical</h3>
+                            <p>He made a thing</p>
+                            <p class="extended-description"></p>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <article class="lore-article">
+                <h2 class="lore-article-heading">Works</h2>
+                <div class="lore-text">
+                    <p>
+                        The paintings channel works can be divided into 3 main categories:  
+                    </p>
+                    <ol>
+                        <li><b>The gold rush</b></li>
+                        <li><b>The driving school period</b> (collaborations between piens and Lars)</li>
+                        <li><b>The ice age</b></li>
+                    </ol>
+                </div>
+                <p class="lore-text">These periods only differ by the mood of the authors, what they were doing at the time and
+                    not much else.
+                </p>
+            </article>
+        </section>
+        <section id="gallery">
+            <h2 class="gallery-heading">Gallery</h2>
+            <div class="filters">
+                <div id="filter_dropdown_button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 01-.659 1.591l-5.432 5.432a2.25 2.25 0 00-.659 1.591v2.927a2.25 2.25 0 01-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 00-.659-1.591L3.659 7.409A2.25 2.25 0 013 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0112 3z" />
+                    </svg>
+                </div>
+                <form id="filter_dropdown" class="hidden">
+                    <div class="author-filter">
+                        <h3>Authors</h3>
+                        <div>
+                            <input type="checkbox" id="Lars-checkbox" name="author" value="Lars" checked />
+                            <label for="Lars-checkbox">Lars</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="piens-checkbox" name="author" value="piens" checked />
+                            <label for="piens-checkbox">piens</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="stereotypical-checkbox" name="author" value="stereotypical" checked />
+                            <label for="stereotypical-checkbox">stereotypical</label>
+                        </div>
+                    </div>
+                    <div class="month-submit">
+                        <div class="month-filter">
+                            <h3>Month range</h3>
+                            <div class="month-field">
+                                <label for="month_from">Month from:</label>
+                                <input type="text" id="month_from">
+                            </div>
+                            <div class="month-field">
+                                <label for="month_until">Month until:</label>
+                                <input type="text" id="month_until">
+                            </div>
+                        </div>
+                        <button type="button" id="filter">Submit</button>
+                    </div>
+                </form>              
+            </div>
+            <div class="gallery"></div>
+        </section>
+        <form name="emailForm" action="https://www.w3schools.com/action_page.php" method="post" onsubmit="return validateForm()">
+            <h3>Subscribe to the paintings newsletter:</h3>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <input type="submit" value="Submit">
+        </form> 
+    </main>
+    <div id="modal" class="image-modal">
+            <div class="modal-close">&times;</div>
+            <img src="assets/lars.png" alt="zoomed in gallery item" id="modal_image">
+    </div>
+</body>
+</html>
